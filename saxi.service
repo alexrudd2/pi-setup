@@ -1,0 +1,15 @@
+[Unit]
+Description=Saxi Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/saxi --hardware v3
+WorkingDirectory=/home/axi/github/saxi
+User=axi
+Group=axi
+Restart=always
+RestartSec=3
+; Environment=NODE_ENV=production
+
+[Install]
+WantedBy=default.target
