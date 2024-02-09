@@ -1,0 +1,26 @@
+[connection]
+id=Icarus
+uuid=97668435-909f-4ad2-af77-c6491f216091
+type=wifi
+interface-name=wlan0
+timestamp=1703295326
+
+[wifi]
+mode=infrastructure
+ssid=Icarus
+
+[wifi-security]
+key-mgmt=wpa-psk
+psk=Kilky200
+
+[ipv4]
+# static IP example
+# address1=192.168.2.91/24,192.168.2.1
+# dns=208.67.220.220;
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+method=auto
+
+[proxy]
