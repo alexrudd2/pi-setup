@@ -3,7 +3,7 @@ Description=Saxi Service
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/saxi --hardware v3
+ExecStart=/usr/bin/node /home/axi/github/saxi/cli.mjs -- --hardware v3
 WorkingDirectory=/home/axi/github/saxi
 User=axi
 Group=axi
